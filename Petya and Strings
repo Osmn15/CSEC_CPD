@@ -1,0 +1,13 @@
+s1=input().lower()
+s2=input().lower()
+checker=0
+for i in range(len(s1)):
+    if s1[i]==s2[i]:
+        checker=0
+    elif s1[i]>s2[i]:
+        checker=1
+        break
+    else:
+        checker=-1
+        break
+print(checker)

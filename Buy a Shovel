@@ -1,0 +1,6 @@
+k,r=map(int,input().split())
+for i in range(1, 11):  
+    total_price = k * i
+    if total_price % 10 == 0 or total_price % 10 == r:
+        print(i)
+        break

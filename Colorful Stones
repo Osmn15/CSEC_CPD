@@ -1,0 +1,9 @@
+string1=input()
+string2=input()
+i=0
+j=0
+while len(string1)>i and len(string2)>j:
+    if string1[i]==string2[j]:
+        i+=1
+    j+=1
+print(i+1)

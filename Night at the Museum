@@ -1,0 +1,12 @@
+s=input().lower()
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+current_pos = 'a'
+rotations = 0
+
+for char in s:
+    current_index = alphabet.index(current_pos)
+    target_index = alphabet.index(char)
+    dis = abs(target_index - current_index)
+    rotations += min(dis, 26 - dis)
+    current_pos = char
+print(rotations)

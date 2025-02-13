@@ -1,0 +1,14 @@
+n=int(input())
+arr=list(map(int,input().split()))
+police = 0
+untreated_crimes = 0
+
+for event in arr:
+    if event > 0:
+        police += event
+    else: 
+        if police > 0:
+            police -= 1  
+        else:
+            untreated_crimes += 1  
+print(untreated_crimes)         

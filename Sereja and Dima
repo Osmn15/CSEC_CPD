@@ -1,0 +1,26 @@
+n=int(input())
+arr=list(map(int,input().split()))
+sereja=0
+dima=0
+i=0
+j=len(arr)-1
+while i<=j:
+    if len(arr)==1:
+        sereja+=arr[i]
+        break
+    if arr[i]>arr[j] :
+        sereja+=arr[i]
+        i+=1
+    else:
+        sereja+=arr[j]
+        j-=1
+    if arr[i]>arr[j] :
+        dima+=arr[i]
+        i+=1
+    else:
+        dima+=arr[j]
+        j-=1
+    if  arr[i]==arr[j]:
+        sereja+=arr[j]
+        j-=1
+print(sereja,dima)

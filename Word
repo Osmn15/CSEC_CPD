@@ -1,0 +1,14 @@
+s= input()
+countupper=0
+countlower=0
+for i in range(len(s)):
+    if s[i]==s[i].upper():
+        countupper+=1
+    else:
+        countlower+=1
+if countlower==countupper:
+    print(s.lower())
+elif countupper>countlower:
+    print(s.upper())
+else:
+    print(s.lower())

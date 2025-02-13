@@ -1,0 +1,5 @@
+from math import gcd
+Y, W = map(int, input().split())
+outcomes = 6 - max(Y, W) + 1
+divisor = gcd(outcomes, 6)
+print(f"{outcomes // divisor}/{6 // divisor}")

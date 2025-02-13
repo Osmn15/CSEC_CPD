@@ -1,0 +1,11 @@
+t=int(input())
+st1=[]
+st2=[]
+for i in range(t):
+    a,b=map(int,input().split())
+    st1.append(a)
+    st2.append(b)
+count=0
+for num in st1:
+    count+=st2.count(num)
+print(count)
