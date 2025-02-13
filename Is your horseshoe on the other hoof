@@ -1,0 +1,3 @@
+arr=list(map(int,input().split()))
+st=set(arr)
+print(4-len(st))
